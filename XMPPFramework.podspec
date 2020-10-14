@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 	    'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv',
 	  }
     ss.resources = [ 'Extensions/**/*.{xcdatamodel,xcdatamodeld}']
-	  ss.dependency 'CocoaLumberjack' # Skip pinning version because of the awkward 2.x->3.x transition
+	  ss.dependency 'CocoaLumberjack', '~> 3.6.0'
 	  ss.dependency 'CocoaAsyncSocket', '~> 7.6'
 	  ss.dependency 'KissXML', '~> 5.2'
 	  ss.dependency 'libidn', '~> 1.35'
